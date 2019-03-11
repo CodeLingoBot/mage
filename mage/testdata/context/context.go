@@ -11,7 +11,7 @@ import (
 	"github.com/magefile/mage/mg"
 )
 
-// Returns a non-nil error.
+// TakesContextNoError returns a non-nil error.
 func TakesContextNoError(ctx context.Context) {
 	deadline, _ := ctx.Deadline()
 	fmt.Printf("Context timeout: %v\n", deadline)
